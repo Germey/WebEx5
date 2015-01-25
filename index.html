@@ -19,17 +19,15 @@
     <body>
 		<!-- 上方导航栏 -->
 		<div class="navbar navbar-default navbar-fixed-top" role="navigation" id="navbar">
-		  <div class="container">
-			  <div class="navbar-header">
-				 　<!-- .navbar-toggle样式用于toggle收缩的内容，即nav-collapse collapse样式所在元素 -->
-				   <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-responsive-collapse">
-					 <span class="sr-only">导航</span>
-					 <span class="icon-bar"></span>
-					 <span class="icon-bar"></span>
-					 <span class="icon-bar"></span>
-				   </button>
-				   <!-- 确保无论是宽屏还是窄屏，navbar-brand都显示 -->
-				   <a href="##" class="navbar-brand">崔庆才</a>
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="sr-only">切换导航</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a href="##" class="navbar-brand">崔庆才</a>
 			  </div>
 			  <!-- 屏幕宽度小于768px时，div.navbar-responsive-collapse容器里的内容都会隐藏，显示icon-bar图标，当点击icon-bar图标时，再展开。屏幕大于768px时，默认显示。 -->
 			  <div class="collapse navbar-collapse navbar-responsive-collapse">
@@ -41,7 +39,7 @@
 						<li><a href="##">与我联系</a></li>
 					</ul>
 			  </div>
-		  </div>
+			</div>
 		</div>
 		<!-- 上方导航栏结束 -->  
 		
@@ -177,7 +175,7 @@
 				<li><a href="#tab-app" role="tab" data-toggle="tab">应用</a></li>
 				<li><a href="#tab-ps" role="tab" data-toggle="tab">设计</a></li>
 			</ul>
-			<div class="tab-content">
+			<div class="tab-content" id="proj-tab">
 				<div class="tab-pane active" id="tab-all">
 					<div class="row">
 						<div class="col-lg-3 col-sm-6" id="tech-col">
@@ -214,7 +212,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="tab-pane active" id="tab-web">
+				<div class="tab-pane" id="tab-web">
 					<div class="row">
 						<div class="col-lg-3 col-sm-6" id="tech-col">
 							<img class="img-circle" src="images/safari-logo-small2.jpg" alt="safari">
@@ -242,7 +240,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="tab-pane active" id="tab-game">
+				<div class="tab-pane" id="tab-game">
 					<div class="row">
 						<div class="col-lg-3 col-sm-6" id="tech-col">
 							<img class="img-circle" src="images/chrome-logo-small.jpg" alt="safari">
@@ -281,6 +279,10 @@
 			</div>
 		</div>
 		<!-- 项目经历结束 -->
+		
+		<!-- 与我联系 -->
+		
+		<!-- 与我联系结束 -->
 		
     </body>
 </html>

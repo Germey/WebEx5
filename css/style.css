@@ -66,11 +66,19 @@
 
 #navbar{
 	margin-bottom:0px;
+	height:50px;
 }
 #tech-container{
 	text-align:center;
 }
 #tech-col{
 	margin-top:40px;
+}
+#proj-tab{
+	text-align:center;
+}
+#main-bar-name{
+	position:relative;
+	line-height:0px;
 }
 
