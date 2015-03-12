@@ -262,11 +262,15 @@ body{
 #navbar{
 	margin-bottom:0px;
 	height:50px;
+	background-color: #eee;
+}
+#navbar #collapse{
+	background-color: #eee;
 }
 #tech-container{
 	text-align:center;
 	margin-top:50px;
-	margin-bottom:50px;
+	margin-bottom:50px;	
 }
 #tech-col{
 	margin-top:40px;

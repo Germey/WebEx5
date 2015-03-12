@@ -1,27 +1,27 @@
 <?php
 
 	require_once "email.class.php";
-	//******************** ÅäÖÃĞÅÏ¢ ********************************
-	$smtpserver = "smtp.163.com";//SMTP·şÎñÆ÷
-	$smtpserverport =25;//SMTP·şÎñÆ÷¶Ë¿Ú
-	$smtpusermail = "19940629cqc@163.com";//SMTP·şÎñÆ÷µÄÓÃ»§ÓÊÏä
-	$smtpemailto = "cqc@cuiqingcai.com";//·¢ËÍ¸øË­
-	$smtpuser = "19940629cqc";//SMTP·şÎñÆ÷µÄÓÃ»§ÕÊºÅ
-	$smtppass = "940629CQC";//SMTP·şÎñÆ÷µÄÓÃ»§ÃÜÂë
-	$mailtitle = $_POST['topic'];//ÓÊ¼şÖ÷Ìâ
-	$mailcontent = $_POST['name'].$_POST['email']."<h1>".$_POST['content']."</h1>";//ÓÊ¼şÄÚÈİ
-	$mailtype = "HTML";//ÓÊ¼ş¸ñÊ½£¨HTML/TXT£©,TXTÎªÎÄ±¾ÓÊ¼ş
-	//************************ ÅäÖÃĞÅÏ¢ ****************************
-	$smtp = new smtp($smtpserver,$smtpserverport,true,$smtpuser,$smtppass);//ÕâÀïÃæµÄÒ»¸ötrueÊÇ±íÊ¾Ê¹ÓÃÉí·İÑéÖ¤,·ñÔò²»Ê¹ÓÃÉí·İÑéÖ¤.
-	$smtp->debug = false;//ÊÇ·ñÏÔÊ¾·¢ËÍµÄµ÷ÊÔĞÅÏ¢
+	//******************** é…ç½®ä¿¡æ¯ ********************************
+	$smtpserver = "smtp.163.com";//SMTPæœåŠ¡å™¨
+	$smtpserverport =25;//SMTPæœåŠ¡å™¨ç«¯å£
+	$smtpusermail = "19940629cqc@163.com";//SMTPæœåŠ¡å™¨çš„ç”¨æˆ·é‚®ç®±
+	$smtpemailto = "cqc@cuiqingcai.com";//å‘é€ç»™è°
+	$smtpuser = "19940629cqc";//SMTPæœåŠ¡å™¨çš„ç”¨æˆ·å¸å·
+	$smtppass = "940629CQC";//SMTPæœåŠ¡å™¨çš„ç”¨æˆ·å¯†ç 
+	$mailtitle = $_POST['topic'];//é‚®ä»¶ä¸»é¢˜
+	$mailcontent = "æœ‰äººåœ¨æ‚¨çš„ä¸ªäººCVé¡µé¢ç»™ä½ ç•™è¨€å•¦<br>TAçš„åå­—: ".$_POST['name']."<br>TAçš„é‚®ç®±: ".$_POST['email']."<br>æ­£æ–‡: ".$_POST['content'];//é‚®ä»¶å†…å®¹
+	$mailtype = "HTML";//é‚®ä»¶æ ¼å¼ï¼ˆHTML/TXTï¼‰,TXTä¸ºæ–‡æœ¬é‚®ä»¶
+	//************************ é…ç½®ä¿¡æ¯ ****************************
+	$smtp = new smtp($smtpserver,$smtpserverport,true,$smtpuser,$smtppass);//è¿™é‡Œé¢çš„ä¸€ä¸ªtrueæ˜¯è¡¨ç¤ºä½¿ç”¨èº«ä»½éªŒè¯,å¦åˆ™ä¸ä½¿ç”¨èº«ä»½éªŒè¯.
+	$smtp->debug = false;//æ˜¯å¦æ˜¾ç¤ºå‘é€çš„è°ƒè¯•ä¿¡æ¯
 	$state = $smtp->sendmail($smtpemailto, $smtpusermail, $mailtitle, $mailcontent, $mailtype);
-	//·µ»ØÖµ³¤¶ÈÎª0,·¢ËÍÊ§°Ü
+	//è¿”å›å€¼é•¿åº¦ä¸º0,å‘é€å¤±è´¥
 	if($state==""){
 		echo 0;
-	//·µ»ØÓĞĞ§ĞÅÏ¢£¬·¢ËÍ³É¹¦
+	//è¿”å›æœ‰æ•ˆä¿¡æ¯ï¼Œå‘é€æˆåŠŸ
 	}else if(strlen($state)!=0){
 		echo 1;
-	//Î´Öª´íÎó
+	//æœªçŸ¥é”™è¯¯
 	}else{
 		echo 2;
 	}
