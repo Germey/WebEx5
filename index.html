@@ -325,7 +325,7 @@
 										<textarea class="form-control" type="text" name="content" id="content" placeholder="你想说的话"></textarea>
 									</div>
 									<div class="col-md-12 col-sm-12 col-xs-12">
-										<input class="btn btn-primary" type="button" name="send" id="send" value="戳我吧">
+										<input class="btn btn-primary" type="button" name="send" id="send" value="戳我吧" >
 									</div>
 								</div>
 							</form>
@@ -365,5 +365,60 @@
 			 Copyright © 2015 <a href="http://cuiqingcai.com">崔庆才</a> 版权所有  托管于 <a href="http://www.aliyun.com/">阿里云主机</a>  鲁ICP备14030596号
 		</div>
 		<!-- 版权结束 -->
+		<div class="modal fade" id="mymodal">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+						<h4 class="modal-title">温馨提示</h4>
+					</div>
+					<div class="modal-body" id="modal-body">
+						<p>提示框</p>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+					</div>
+				</div><!-- /.modal-content -->
+			</div><!-- /.modal-dialog -->
+		</div><!-- /.modal -->
+		<script>
+		  $(function(){
+			$("form #send").click(function(){
+				var name = $('form #username').val();
+				var email = $('form #email').val();
+				var topic = $('form #topic').val();
+				var content = $('form #content').val();
+				var myreg = /^([a-zA-Z0-9]+[_|\_|\.]?)*[a-zA-Z0-9]+@([a-zA-Z0-9]+[_|\_|\.]?)*[a-zA-Z0-9]+\.[a-zA-Z]{2,3}$/;
+				if(name.length==0){
+					document.getElementById("modal-body").innerHTML = "请留下您的姓名";
+					$("#mymodal").modal("toggle");
+				}else if(!myreg.test(email)){
+					document.getElementById("modal-body").innerHTML = "请填入正确的邮箱";
+					$("#mymodal").modal("toggle");
+				}else if(topic.length==0){
+					document.getElementById("modal-body").innerHTML = "请填入主题";
+					$("#mymodal").modal("toggle");				
+				}else if(content.length==0){
+					document.getElementById("modal-body").innerHTML = "请留下您要说的话";
+					$("#mymodal").modal("toggle");				
+				}else{
+					document.getElementById("send").value = "正在发送中";
+					$.post("php/sendmail.php",{name:name,email:email,topic:topic,content:content},function(msg){ 
+						if(msg==1){ 
+							document.getElementById("modal-body").innerHTML = "恭喜您发送成功啦！";
+							$("#mymodal").modal("toggle");
+						}else if(msg==0){
+							document.getElementById("modal-body").innerHTML = "对不起发送失败了，请再试一次吧！";
+							$("#mymodal").modal("toggle");	
+						}else{
+							document.getElementById("modal-body").innerHTML = "啊哦，服务器出问题了！";
+							$("#mymodal").modal("toggle");	
+						}
+					}); 
+					document.getElementById("send").value = "戳我吧";
+				}
+			});
+		  });
+		</script>
     </body>
 </html>
