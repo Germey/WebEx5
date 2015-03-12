@@ -1,3 +1,4 @@
+
 $(document).ready(function(){
 
 	prepareIcon();
@@ -17,3 +18,4 @@ function prepareIcon(){
 	$(".social-icon").css("line-height",width+"px");
 	
 }
+
