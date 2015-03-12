@@ -53,7 +53,7 @@
 		font-size: 15px;
 		float: left;
 		outline: none;
-		font-weight: 600;
+		font-weight: 100;
 		border-radius: 10px;
 		-webkit-border-radius: 10px;
 		-moz-border-radius: 10px;
@@ -70,7 +70,7 @@
 		font-size: 15px;
 		float: left;
 		outline: none;
-		font-weight: 600;
+		font-weight: 100;
 		border-radius: 10px;
 		-webkit-border-radius: 10px;
 		-moz-border-radius: 10px;
@@ -88,7 +88,7 @@
 		font-size: 20px;
 		float: left;
 		outline: none;
-		font-weight: 600;
+		font-weight: 100;
 		border-radius: 10px;
 		-webkit-border-radius: 10px;
 		-moz-border-radius: 10px;
@@ -184,7 +184,7 @@
 		font-size: 15px;
 		float: left;
 		outline: none;
-		font-weight: 600;
+		font-weight: 100;
 		border-radius: 10px;
 		-webkit-border-radius: 10px;
 		-moz-border-radius: 10px;
@@ -201,7 +201,7 @@
 		font-size: 15px;
 		float: left;
 		outline: none;
-		font-weight: 600;
+		font-weight: 100;
 		border-radius: 10px;
 		-webkit-border-radius: 10px;
 		-moz-border-radius: 10px;
@@ -219,7 +219,7 @@
 		font-size: 20px;
 		float: left;
 		outline: none;
-		font-weight: 600;
+		font-weight: 100;
 		border-radius: 10px;
 		-webkit-border-radius: 10px;
 		-moz-border-radius: 10px;
@@ -251,9 +251,14 @@
 		font-size:30px;
 	}
 }
+body{
+	font-family:"Microsoft Yahei";
+}
+/* 轮播 */
 .carousel{
 	font-family:"Microsoft Yahei";
 }
+/* 导航条 */
 #navbar{
 	margin-bottom:0px;
 	height:50px;
@@ -279,12 +284,7 @@
 #send:hover{
 	background-color:#F05858;
 }
-.foot{
-	background-color:#333;
-	min-height:100px;
-	text-align:center;
-	color:#fff;
-}
+
 .contact-social p{
 	text-align:center;
 }
@@ -368,6 +368,10 @@
 	font-size:30px;
 	text-align:center;
 }
+.project a{
+	color:#333;
+	text-decoration:none;
+}
 #proj .proj-img{
 	width:240px;
 }
@@ -384,4 +388,17 @@
 #proj #proj-col:hover{
 	background-color:#fafafa;
 	cursor:pointer;
+}
+/* 底部版权 */
+.foot{
+	text-align:center;
+	padding-top:40px;
+	font-size:15px;
+	color:#aaa;
+	background-color:#333;
+	min-height:100px;
+}
+.foot a{
+	color:#aaa;
+	text-decoration:none;
 }
