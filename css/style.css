@@ -31,18 +31,10 @@
 		max-height:300px;
 		
 	}
-	.social-icon {
-		display: inline-block;
-		width: 80%;
-		color: #fff;
-		border-radius: 100%;
-		margin: 6px;
-		text-align:center;
-	}
-	.contact form{
+	.add form{
 		padding-bottom:20px;
 	}
-	.contact form input{
+	.add form input{
 		height:60px;
 		margin-bottom:8px;
 		margin-top:8px;
@@ -59,24 +51,7 @@
 		-moz-border-radius: 10px;
 		-o-border-radius: 10px;
 	}
-	.contact form textarea{
-		height:100px;
-		margin-bottom:8px;
-		margin-top:8px;
-		font-family: 'Open Sans', sans-serif;
-		padding: 1em 2em 1em 1em;
-		border: solid 2px #eee;
-		color: #989898;
-		font-size: 15px;
-		float: left;
-		outline: none;
-		font-weight: 100;
-		border-radius: 10px;
-		-webkit-border-radius: 10px;
-		-moz-border-radius: 10px;
-		-o-border-radius: 10px;
-	}
-	.contact form #send{
+	.add form #add{
 		height:60px;
 		width:100%;
 		margin-bottom:8px;
@@ -94,43 +69,69 @@
 		-moz-border-radius: 10px;
 		-o-border-radius: 10px;
 	}
-	.contact .form-title{
+	.add .form-title{
 		text-align:center;
 		font-size:26px;
 		font-family:"Microsoft Yahei";
 		padding-top:20px;
 		padding-bottom:30px;
 	}
-	.contact{
+	.add{
 		background-color:#eee;
 		padding-top:20px;
 		padding-bottom:30px;
 	}
-	#tech-title p{
+	.add form{
+		padding-bottom:20px;
+	}
+	.find form input{
+		height:60px;
+		margin-bottom:8px;
+		margin-top:8px;
+		font-family: 'Open Sans', sans-serif;
+		padding: 1em 2em 1em 1em;
+		border: solid 2px #eee;
+		color: #989898;
+		font-size: 15px;
+		float: left;
+		outline: none;
+		font-weight: 100;
+		border-radius: 10px;
+		-webkit-border-radius: 10px;
+		-moz-border-radius: 10px;
+		-o-border-radius: 10px;
+	}
+	.find form #findresult{
+		height:60px;
+		width:100%;
+		margin-bottom:8px;
+		margin-top:8px;
+		font-family: 'Microsoft Yahei';
+		color: #fff;
+		padding: 0 0 0 0;
+		border:none;
+		font-size: 20px;
+		float: left;
+		outline: none;
+		font-weight: 100;
+		border-radius: 10px;
+		-webkit-border-radius: 10px;
+		-moz-border-radius: 10px;
+		-o-border-radius: 10px;
+	}
+	.find .form-title{
+		text-align:center;
 		font-size:26px;
 		font-family:"Microsoft Yahei";
+		padding-top:20px;
+		padding-bottom:30px;
 	}
-	.about-caption img{
-		width:100px;
+	.find{
+		background-color:#eee;
+		padding-top:20px;
+		padding-bottom:30px;
 	}
-	.about-me{
-		height:300px;
-	}
-	.about-me .item{
-		height:300px;
-	}
-	.about-me .item .bg{
-		height:300px;
-	}
-	.about-caption{
-		bottom:30px;
-	}
-	.about-caption #icon{
-		width:80px;
-	}
-	.project .proj-title{
-		font-size:26px;
-	}
+	
 }
 
 @media (min-width: 768px) {
@@ -160,21 +161,10 @@
 		width:100%;
 		height:400px;
 	}
-	.social-icon {
-		display: inline-block;
-		width: 70px;
-		height: 70px;
-		font-size: 50px;
-		line-height: 60px;
-		color: #fff;
-		border-radius: 100%;
-		margin: 6px;
-		text-align:center;
-	}
-	.contact form{
+	.add form{
 		padding-bottom:20px;
 	}
-	.contact form input{
+	.add form input{
 		height:60px;
 		margin-bottom:15px;
 		margin-top:15px;
@@ -190,24 +180,7 @@
 		-moz-border-radius: 10px;
 		-o-border-radius: 10px;
 	}
-	.contact form textarea{
-		height:100px;
-		margin-bottom:15px;
-		margin-top:15px;
-		font-family: 'Open Sans', sans-serif;
-		padding: 1em 2em 1em 1em;
-		border: solid 2px #eee;
-		color: #989898;
-		font-size: 15px;
-		float: left;
-		outline: none;
-		font-weight: 100;
-		border-radius: 10px;
-		-webkit-border-radius: 10px;
-		-moz-border-radius: 10px;
-		-o-border-radius: 10px;
-	}
-	.contact form #send{
+	.add form #add{
 		height:60px;
 		width:100%;
 		margin-bottom:15px;
@@ -225,14 +198,63 @@
 		-moz-border-radius: 10px;
 		-o-border-radius: 10px;
 	}
-	.contact .form-title{
+	.add .form-title{
 		text-align:center;
 		font-size:30px;
 		font-family:"Microsoft Yahei";
 		padding-top:20px;
 		padding-bottom:30px;
 	}
-	.contact{
+	.add{
+		background-color:#eee;
+		padding-top:30px;
+		padding-bottom:40px;
+	}
+	.find form{
+		padding-bottom:20px;
+	}
+	.find form input{
+		height:60px;
+		margin-bottom:15px;
+		margin-top:15px;
+		font-family: 'Open Sans', sans-serif;
+		border: solid 2px #eee;
+		color: #989898;
+		font-size: 15px;
+		float: left;
+		outline: none;
+		font-weight: 100;
+		border-radius: 10px;
+		-webkit-border-radius: 10px;
+		-moz-border-radius: 10px;
+		-o-border-radius: 10px;
+	}
+	.find form #findresult{
+		height:60px;
+		width:100%;
+		margin-bottom:15px;
+		margin-top:15px;
+		font-family: 'Microsoft Yahei';
+		padding: 0 0 0 0;
+		color: #fff;
+		border:none;
+		font-size: 20px;
+		float: left;
+		outline: none;
+		font-weight: 100;
+		border-radius: 10px;
+		-webkit-border-radius: 10px;
+		-moz-border-radius: 10px;
+		-o-border-radius: 10px;
+	}
+	.find .form-title{
+		text-align:center;
+		font-size:30px;
+		font-family:"Microsoft Yahei";
+		padding-top:20px;
+		padding-bottom:30px;
+	}
+	.find{
 		background-color:#eee;
 		padding-top:30px;
 		padding-bottom:40px;
@@ -241,15 +263,6 @@
 		font-size:30px;
 		font-family:"Microsoft Yahei";
 	}
-	.about-caption{
-		bottom:100px;
-	}
-	.about-caption #icon{
-		width:120px;
-	}
-	.project .proj-title{
-		font-size:30px;
-	}
 }
 body{
 	font-family:"Microsoft Yahei";
@@ -257,6 +270,9 @@ body{
 /* 轮播 */
 .carousel{
 	font-family:"Microsoft Yahei";
+}
+.carousel-inner>.item>a>img, .carousel-inner>.item>img{
+	width: 100%;
 }
 /* 导航条 */
 #navbar{
@@ -282,117 +298,26 @@ body{
 	position:relative;
 	line-height:0px;
 }
-#send{
+#add{
 	background-color:#EE7171;
 }
-#send:hover{
+#findresult{
+	background-color:#71A2EE;
+}
+#add:hover{
 	background-color:#F05858;
 }
-
-.contact-social p{
+#findresult:hover{
+	background-color:#477DD0;
+}
+.add-social p{
 	text-align:center;
 }
 #icon{
 	text-align:center;
 }
-/* 社交符号颜色 */
-.sinaweibo{
-	background-color: #EC5B5B;
-}
-.tencentweibo{
-	background-color: #2BC0B5;
-}
-.wechat{
-	background-color: #49C085;
-}
-.qq{
-	background-color: #6F92FF;
-}
-.renren{
-	background-color: #7243D4;
-}
-.github{
-	background-color: #7782D1;
-}
 
-/* 技能树 */
-.percent{
-	z-index:10;
-	position: relative;
-	bottom: 135px;
-	font-size:30px;
-	font-family:"Microsoft Yahei";
-	z-index: 10;
-	padding-top: 20px;
-}
 
-#tech-col p{
-	font-size:20px;
-	margin-bottom:40px;
-	margin-top:-20px;
-}
-
-/*  关于我 */
-#about-container{
-	position:relative;
-}
-
-.about-caption{
-	text-align:center;
-	text-align: center;
-	z-index: 10;
-	position: absolute;
-	right:15%;
-	left:15%;
-	font-family:"Microsoft Yahei";
-	color:#fff;
-	text-shadow: 0 1px 2px rgba(0,0,0,0.3);
-}
-.about-caption #icon{
-	border-radius:50%;
-}
-.about-caption #name{
-	font-size:20px;
-	margin-bottom:20px;
-	margin-top:20px;
-}
-.about-caption #brief{
-	font-size:15px;
-}
-
-/* 项目经历 */
-.project{
-	margin-top:80px;
-	margin-bottom:80px;
-	font-family:"Microsoft Yahei";
-}
-
-.project .proj-title{
-	font-family:"Microsoft Yahei";
-	font-size:30px;
-	text-align:center;
-}
-.project a{
-	color:#333;
-	text-decoration:none;
-}
-#proj .proj-img{
-	width:240px;
-}
-#proj h3{
-	font-size:20px;
-	margin-bottom:30px;
-	margin-top:25px;
-}
-#proj p{
-	font-size:16px;
-	margin-top:35px;
-	margin-bottom:20px;
-}
-#proj #proj-col:hover{
-	background-color:#fafafa;
-	cursor:pointer;
-}
 /* 底部版权 */
 .foot{
 	text-align:center;
